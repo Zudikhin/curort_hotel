@@ -1729,6 +1729,10 @@ body {
   }
 }
 
+.product_content_item_fund_content_body_nav .slick-track {
+  margin-left: 0px !important;
+}
+
 .product_main_left_slider_nav.noscroll .slick-track,
 .product_main_left_slider_nav.noscroll .slick-list {
   -webkit-transform: translate3d(0, 0, 0) !important;
