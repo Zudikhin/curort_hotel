@@ -516,6 +516,10 @@ body {
   line-height: 18px;
   letter-spacing: 0.02em;
   color: #666666;
+  margin-top: 10px;
+}
+.product_main_right_description p:first-child {
+  margin-top: 0px;
 }
 .product_main_right h5 {
   -webkit-box-ordinal-group: 6;
