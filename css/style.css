@@ -1436,9 +1436,6 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     position: relative;
   }
   .product_main_left {
@@ -1446,6 +1443,11 @@ body {
   }
   .product_main_right {
     width: 500px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: inherit;
+    position: relative;
   }
   .product_main_right_upper_title {
     margin-top: 0px;
