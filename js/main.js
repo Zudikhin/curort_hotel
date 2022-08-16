@@ -46,6 +46,41 @@ $(document).ready(function () {
       $(this).parent().toggleClass("active");
     });
 
+    $(".header_block_drop").click(function() {
+      $(".dropdown").addClass("active");
+    });
+
+    $(".dropdown_btn").click(function() {
+      $(".dropdown").removeClass("active");
+    });
+
+    $(".product_content_item_fund_content_body_form_btn_call").click(function() {
+      $(".back_modal").addClass("active");
+      $(".modal_callback").addClass("active");
+    });
+
+    $(".modal_callback_close").click(function() {
+      $(".back_modal").removeClass("active");
+      $(".modal_callback").removeClass("active");
+    });
+
+    $(".back_modal").click(function() {
+      $(this).removeClass("active");
+      $(".modal_callback").removeClass("active");
+    });
+
+    $(".product_content_item_fund_content_body_icons_drop").click(function() {
+      $(this).toggleClass("active");
+      $(this).parent().parent().find(".product_content_item_fund_content_body_info").toggleClass("active");
+    });
+
+    $(".product_content_item_fund_content input[type='date']").change(function() {
+      var date = $(this).val();
+      var arrayDate = date.split("-");
+      var textDate = arrayDate[2] + '.' + arrayDate[1] + '.' + arrayDate[0];
+      $(this).siblings("p").text(textDate);
+    });
+
     $(".product_nav_mobile_drop ul li").click(function() {
       var id = $(this).attr("data-target");
       var text = $(this).text();
